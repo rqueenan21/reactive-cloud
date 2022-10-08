@@ -23,6 +23,11 @@ public class CatalogServiceImpl implements CatalogService {
         return Mono.zip(movieInfo, movieRating, CatalogItem::new);
     }
 
+    @Override
+    public Mono<CatalogItem> getUserItems(Long userId) {
+        return null;
+    }
+
     private Mono<Movie> getMovieInfo(Long movieId) {
         return webClient.get()
                 .uri("http://localhost:8181/movies/" + movieId)

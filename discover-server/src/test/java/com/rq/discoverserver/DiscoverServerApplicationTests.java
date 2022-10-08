@@ -1,10 +1,10 @@
-package com.rq.discovery.discovery;
+package com.rq.discoverserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DiscoveryApplicationTests {
+class DiscoverServerApplicationTests {
 
 	@Test
 	void contextLoads() {
